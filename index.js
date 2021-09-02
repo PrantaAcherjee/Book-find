@@ -7,6 +7,7 @@ const bookCollection = () => {
     if (searchText == '') {
         errorDiv.innerText = 'Search can not be empty !!'
     }
+    else { errorDiv.innerText = 'your data are given below !!' }
 
     const url = `http://openlibrary.org/search.json?q=${searchText}`
     // console.log(url);
