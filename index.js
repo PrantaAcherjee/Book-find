@@ -2,15 +2,16 @@ const bookCollection = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     const errorDiv = document.getElementById('errors');
-    // console.log(searchText);
+    console.log(searchText);
     searchField.value = '';
     if (searchText == '') {
         errorDiv.innerText = 'Search can not be empty !!'
     }
     else { errorDiv.innerText = 'your data are given below !!' }
 
-    const url = `http://openlibrary.org/search.json?q=${searchText}`
-    // console.log(url);
+
+    const url = `https://openlibrary.org/search.json?q=${searchText}`
+    console.log(url);
 
     fetch(url)
         .then(responsive => responsive.json())
@@ -20,7 +21,6 @@ const bookCollection = () => {
 const displaySearchResult = books => {
     const searchResult = document.getElementById('search-result');
     searchResult.innerHTML = '';
-
     books.forEach(book => {
         // console.log(book);
         const div = document.createElement('div');
