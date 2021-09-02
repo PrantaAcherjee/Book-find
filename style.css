@@ -1,0 +1,13 @@
+.search-result {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/*--------------------------- 
+    Dynamic HTML style  
+---------------------------*/
+
+.dynamic-result img {
+    height: 300px;
+    width: 300px;
+}
