@@ -26,7 +26,7 @@ const displaySearchResult = books => {
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
-                <div onclick="loadMovieDetail" class="card h-100">
+                <div onclick="" class="card h-100">
                 <img src="" class="card-img-top" alt="">
                 <div class="card-body">
                 <h5 class="card-title"> Title: ${book.title}</h5>
